@@ -1,15 +1,14 @@
 # MacSetup
 
-Run 'initialSetup.sh' for first time.
+Run [initialSetup.sh](initialSetup.sh) for first time.
 
-FILE: .bash_profile
-    Terminal coloring
-    Git auto-complete setup
+FILE: [.bash_profile](.bash_profile)
+- Terminal coloring
+- Git auto-complete setup
 
-FILE: .git_completion.bash
-FILE: .git_prompt.sh
-    Git auto-completion library
-    Downloaded from https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+FILES: [.git_completion.bash](.git_completion.bash), [.git_prompt.sh](.git_prompt.sh)
+- Git auto-completion library
+- Downloaded from https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 
-FILE: .vimrc
-    Vim setup
+FILE: [.vimrc](.vimrc)
+- Vim setup
