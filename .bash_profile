@@ -25,13 +25,18 @@ C_BG_PURPLE="\[\033[45m\]"
 C_BG_CYAN="\[\033[46m\]"
 C_BG_LIGHTGRAY="\[\033[47m\]"
 
-source ~/.git_completion.bash
-source ~/.git_prompt.sh
+if [ -f ~/.git_completion.bash ]; then
+  . ~/.git_completion.bash
+fi
+
+if [ -f ~/.git_prompt.sh ]; then
+  . ~/.git_prompt.sh
+fi
 
 export PS1="\n<$C_BLACK\!$C_DEFAULT>:$C_BLUE\u$C_DEFAULT@$C_GREEN\w$C_LIGHTRED\$(__git_ps1)$C_DEFAULT$ "
 export CLICOLOR=1
 #export LSCOLORS=GxFxCxDxBxegedabagaced
 export LSCOLORS=ExFxCxdxbxegedabagacad
 
-export PATH="/usr/local/Cellar/git/2.13.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/Cellar/python/2.7.13/bin:/usr/local/Cellar/git/2.13.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
