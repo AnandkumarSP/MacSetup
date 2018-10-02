@@ -12,3 +12,6 @@ FILES: [.git_completion.bash](.git_completion.bash), [.git_prompt.sh](.git_promp
 
 FILE: [.vimrc](.vimrc)
 - Vim setup
+
+BREW:
+- `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
