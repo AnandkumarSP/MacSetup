@@ -15,3 +15,13 @@ FILE: [.vimrc](.vimrc)
 
 BREW:
 - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+CLIPBOARD MANAGER:
+- `brew cask install clipy`
+
+STORE HISTORY FROM ALL TERMINALS:
+- Add below line to `./etc/bashrc`
+- `export PROMPT_COMMAND='history -a'`
+
+DISABLE SPACES REARRANGEMENT:
+- Goto `System Preferences` -> `Mission Control` -> Disable `Automatically rearrange Spaces based on most recent use`
