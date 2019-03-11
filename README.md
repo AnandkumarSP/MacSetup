@@ -58,5 +58,5 @@ Run [initialSetup.sh](initialSetup.sh) for first time.
 - `ssh-add -K ~/.ssh/id_rsa`
 
 ## Other applications
-- `https://monosnap.com/welcome`
-- `http://recordit.co/`
+- https://monosnap.com/welcome
+- http://recordit.co/
