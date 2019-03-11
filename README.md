@@ -56,3 +56,7 @@ Run [initialSetup.sh](initialSetup.sh) for first time.
 ## TO GENERATE SSH KEY:
 - `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 - `ssh-add -K ~/.ssh/id_rsa`
+
+## Other applications
+- `https://monosnap.com/welcome`
+- `http://recordit.co/`
