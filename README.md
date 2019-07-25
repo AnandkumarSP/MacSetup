@@ -7,6 +7,7 @@ Run [initialSetup.sh](initialSetup.sh) for first time.
 - Git auto-complete setup
 
 ## FILES: [~/.git_completion.bash](.git_completion.bash), [~/.git_prompt.sh](.git_prompt.sh)
+Optional files. Prefer to use git installed via brew using the command `brew install git`
 - Git auto-completion library
 - Downloaded from https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 

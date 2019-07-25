@@ -25,18 +25,39 @@ C_BG_PURPLE="\[\033[45m\]"
 C_BG_CYAN="\[\033[46m\]"
 C_BG_LIGHTGRAY="\[\033[47m\]"
 
-if [ -f ~/.git_completion.bash ]; then
-  . ~/.git_completion.bash
+#if [ -f ~/.git_completion.bash ]; then
+#  . ~/.git_completion.bash
+#fi
+
+#if [ -f ~/.git_prompt.sh ]; then
+#  . ~/.git_prompt.sh
+#fi
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+   . $(brew --prefix)/etc/bash_completion
 fi
 
-if [ -f ~/.git_prompt.sh ]; then
-  . ~/.git_prompt.sh
+if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
+   . `brew --prefix`/etc/bash_completion.d/git-completion.bash
 fi
 
-export PS1="\n<$C_BLACK\!$C_DEFAULT>:$C_BLUE\u$C_DEFAULT@$C_GREEN\w$C_LIGHTRED\$(__git_ps1)$C_DEFAULT$ "
+if [ -f `brew --prefix`/etc/bash_completion.d/git-prompt.sh ]; then
+   . `brew --prefix`/etc/bash_completion.d/git-prompt.sh
+fi
+
+# For white theme
+#export PS1="\n<$C_BLACK\!$C_DEFAULT>:$C_BLUE\u$C_DEFAULT@$C_GREEN\w$C_LIGHTRED\$(__git_ps1)$C_DEFAULT$ "
+# For dark theme
+export PS1="\n<$C_WHITE\!$C_DEFAULT>:$C_BLUE\u$C_DEFAULT@$C_GREEN\w$C_LIGHTRED\$(__git_ps1)$C_DEFAULT$ "
+
 export CLICOLOR=1
 #export LSCOLORS=GxFxCxDxBxegedabagaced
 export LSCOLORS=ExFxCxdxbxegedabagacad
 
-export PATH="/usr/local/Cellar/python/2.7.13/bin:/usr/local/Cellar/git/2.13.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/opt/node@8/bin:/usr/local/Cellar/python/2.7.13/bin:/usr/local/Cellar/git/2.22.0_1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/arangodb/3.4.0/sbin"
+
+
+
+export IM_REDIRECT_URI=https://cc2.local.com/work/cc/authorized
+export CC_SERVERNAME=cc2.local.com
 
