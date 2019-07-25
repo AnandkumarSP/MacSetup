@@ -22,7 +22,7 @@ Optional files. Prefer to use git installed via brew using the command `brew ins
 
 ## STORE HISTORY FROM ALL TERMINALS:
 - Add below line to `/etc/bashrc`
-- `export PROMPT_COMMAND='history -a'`
+- `export PROMPT_COMMAND="history -a | $PROMPT_COMMAND"`
 
 ## DISABLE SPACES REARRANGEMENT:
 - Goto `System Preferences` -> `Mission Control` -> Disable `Automatically rearrange Spaces based on most recent use`
