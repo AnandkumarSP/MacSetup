@@ -57,3 +57,7 @@ Optional files. Prefer to use git installed via brew using the command `brew ins
 ## TO GENERATE SSH KEY:
 - `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 - `ssh-add -K ~/.ssh/id_rsa`
+
+## Other applications
+- https://monosnap.com/welcome
+- http://recordit.co/
